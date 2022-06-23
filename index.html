@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú lateral responsive - MagtimusPro</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <Select>
+                        <option value="value1" selected>Oscar</option>
+                        <option value="value2" >Perfil</option>
+                        <option value="value3">Cerrar Sesion</option>
+                    </Select>
+                </li>
+            </ul>
+            
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <img src="assets/gas.svg" class="menu_icono">
+            <h4>Sistemas</h4>
+        </div>
+        <hr>
+        <nav class="menu">
+            <section class="menu__container">
+                 <ul class="menu_links">
+                    <li class="menu_item">
+                        <a href="#" class="menu_link"><img src="assets/home.svg" class="menu_icono">Home</a>
+                    </li>
+                   
+                    <!--Administrador de pedidos-->  
+                    <li class="menu_item menu_item--show">
+                        <a href="#" class="menu_link"><img src="assets/pedidos.svg" class="menu_icono">Administrador de pedidos<img src="assets/arrow.svg" class="menu_arrow"></a>
+                        <ul class="menu_nesting">
+                        
+                            <li class="menu_inside ">
+                                <a href="" class="menu_link  menu_link--inside"><h4>Administrador</h4></a>
+                            </li>
+                            <li class="menu_inside ">
+                                <a href="" class="menu_link  menu_link--inside"><h4>Clientes</h4></a>
+                            </li>
+                            <li class="menu_inside ">
+                                <a href="" class="menu_link  menu_link--inside"><h4>Monitores</h4></a>
+                            </li>
+                            <li class="menu_inside ">
+                                <a href="" class="menu_link  menu_link--inside"><h4>Vendedores en ruta</h4></a>
+                            </li>
+                            <li class="menu_inside ">
+                                <a href="" class="menu_link  menu_link--inside"><h4>Reportes</h4></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--Fin Administrador de pedidos--> 
+                    
+                  
+
+                </ul>
+            
+            </section>
+        </nav>
+    </div>
+
+    <main>
+           </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
