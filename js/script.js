@@ -4,18 +4,25 @@ document.getElementById("btn_open").addEventListener("click", open_close_menu);
 //Declaramos variables
 var side_menu = document.getElementById("menu_side");
 var btn_open = document.getElementById("btn_open");
-var body = document.getElementById("body");
+var contenedor = document.getElementById("contenedor");
+var subcontenedor = document.getElementById("subcontenedor");
+var header = document.getElementById("header");
 
 //Evento para mostrar y ocultar menú
     function open_close_menu(){
-        body.classList.toggle("body_move");
+        contenedor.classList.toggle("section_move");
+        subcontenedor.classList.toggle("section_move");
         side_menu.classList.toggle("menu__side_move");
+
+     //   header.classList.toggle("header_MOVE");
+        btn_open.classList.toggle("i_move");
     }
 
 //Si el ancho de la página es menor a 760px, ocultará el menú al recargar la página
-
+/*
 if (window.innerWidth < 760){
 
+    btn_open.classList.add("i_move");
     body.classList.add("body_move");
     side_menu.classList.add("menu__side_move");
 }
@@ -26,18 +33,20 @@ window.addEventListener("resize", function(){
 
     if (window.innerWidth > 760){
 
+        btn_open.classList.remove("i_move");
         body.classList.remove("body_move");
         side_menu.classList.remove("menu__side_move");
     }
 
     if (window.innerWidth < 760){
 
+        btn_open.classList.add("i_move");
         body.classList.add("body_move");
         side_menu.classList.add("menu__side_move");
     }
 
 });
-
+*/
 (function(){
     const listElements= document.querySelectorAll(".menu_item--show");
     const list= document.querySelectorAll(".menu_links")
@@ -64,5 +73,3 @@ window.addEventListener("resize", function(){
 
 
 
-
-//https://www.youtube.com/watch?v=6437QeuvbpY

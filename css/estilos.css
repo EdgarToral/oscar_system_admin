@@ -12,6 +12,7 @@ body{
     margin-left: 80px;
     margin-top: 80px;
     transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    background-color: #f6f5fa;
 }
 
 main{
@@ -21,13 +22,12 @@ main{
 header{
     width: 100%;
     height: 80px;
-    background: #F7F8FC;
-    display: flex;
-    align-items: center;
+    background: #Fff;
+    /*background: #F7F8FC;*/
+    display: inline-block;
     position: fixed;
     top: 0;
     z-index: 200;
-    float: right;
 }
 
 .menu{
@@ -35,6 +35,7 @@ header{
     color: #afb5cc;
     height: 30px;
     margin-top: 30px;
+    margin-left: -20px;
     
 }
 .menu__container{
@@ -47,7 +48,7 @@ header{
 .menu_links{
     height: 60%;
     transition: transform .5s;
-    margin-top: 0px;
+    margin-top: 4px;
     display: grid;
     grid-auto-rows: max-content;
     
@@ -60,6 +61,7 @@ header{
     height: 100%;
     --transform: rotate(-90deg) ;
     overflow: hidden;
+    margin-top: 4px;
 }
 .menu_item--active{
     --transform: rotate(0);
@@ -82,6 +84,7 @@ header{
     background-color: #2a2f42;
     height: 0;
     transition: height .3s;
+    margin-top: 6px;
 }
 
 .menu_item:hover{
@@ -97,8 +100,8 @@ header{
 .menu_link{
     color: #afb5cc;
     text-decoration: none;
-    padding: 7px 0;
-    margin-left: 13px;
+    padding-left: 1px;
+    margin-left: 1px;
     display: flex;
     height: auto;
     align-items:center;
@@ -109,17 +112,36 @@ header{
 
 .menu_link--inside{
     width: 90%;
-    margin-left: 15px;
+    margin-left: -23px;
    /* border-left: 1px solid #fff;*/
 }
 .menu_link--inside:hover{
     background-color: #8f93ac;
+}
+.menu_link2{
+    color: #afb5cc;
+    text-decoration: none;
+    padding-left: 1px;
+    margin-left: 1px;
+    display: flex;
+    height: auto;
+    align-items:center;
 }
 .menu_icono{
     
     display: block;
     margin-right: 10px;
     margin-left: 9px;
+
+}
+.menu_icono2{
+    
+    display: block;
+    margin-right: 10px;
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+
 }
 h4{
     margin-left: 55px;
@@ -135,19 +157,14 @@ h4{
     justify-content: center;
     align-items: center;
     transform: translateX(10px);
+    
 }
 
 .icon__menu i{
     font-size: 20px;
     cursor: pointer;
-    position: absolute;
 }
-select{
-    width: 100px;
-    height: 100%;
-    display: inline-block;
-    position: relative;
-}
+
 
 .menu__side{
     width: 80px;
@@ -161,24 +178,13 @@ select{
     z-index: 300;
     overflow: hidden;
     overflow-y: scroll;
-    border-right: 20px solid #2a2f42;
+    border-right: 15px solid #2a2f42;
     transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
     
 }
 hr{
     margin-left: 10px;
     color: #8f93ac;
-}
-header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-header ul li {
-    float: left;
 }
 
 
@@ -193,6 +199,11 @@ header ul li {
     scrollbar-width: none;
 }
 
+.aParent div {
+
+    float: left;
+    clear: none; 
+}
 
 .name__page{
     padding: 20px 30px;
@@ -207,33 +218,151 @@ header ul li {
 }
 
 /*Clases para usar en JavaScript*/
-
-.body_move{
-    margin-left: 350px;
+.section_move{
+    margin-left: 280px;
 }
+
+.i_move{
+    margin-left: 280px;
+}
+
 
 .menu__side_move{
     width: 350px;
 }
 
+.btnAdmin{
+    margin-top: 80px;
+    display: inline-block;
+    align-items: center;
+    height: 100%;
+}
+.btnEstilosMenu{
+    width: 40px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    margin-right: 10px;
+    display: block;
+    
+}
 
-@media screen and (max-width: 760px){
-    .body_move{
-        margin-left: 350px;
-    }
-
-    .menu__side_move{
-        width: 350px;
-        
-    }
+.div_reasigna_ordenes{
+    display: inline-block;
+    padding-left: 10px;
+    align-items: center;
+    margin-top: 7px;
+}
+.div_reasigna_ordenes input{
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 14px;
+    width: 175px;
 }
 
 
+.div_usuario_nuevo{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.div_usuario_nuevo input{
+    width: 120px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+.div_usuario_nuevo select{
+    width: 120px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.div_usuario_nuevo2{
+    padding-left: 5px;
+    display: block;
+    margin-top: 5px;
+}
+
+.div_usuario_button{
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+.div_usuario_button button{
+    margin-right: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
 
 
+.div_encuesta{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.div_encuesta input{
+    width: 320px;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.div_encuesta2{
+    padding-left: 5px;
+    display: block;
+    margin-top: 5px;
+}
 
 
+.div_cambio_asignacion{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
 
+.div_cambio_asignacion select{
+    width: 200px;
+    margin-right: 10px;
+    font-size: 13px;
+}
 
+.div_cambio_asignacion2{
+    padding-left: 5px;
+    display: block;
+    margin-top: 5px;
+}
 
+.div_catalogo_zonas{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
 
+.div_catalogo_zonas input{
+    width: 150px;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.div_catalogo_zonas2{
+    padding-left: 5px;
+    display: block;
+    margin-top: 5px;
+}
+
+.div_st{
+    display: inline-block;
+    padding-left: 10px;
+    align-items: center;
+    margin-top: 7px;
+}
+.div_st input{
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 14px;
+    width: 175px;
+}
